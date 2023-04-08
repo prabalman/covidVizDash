@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+header {
+  /*background: #80CBC4;*/
+  height: 15vh;
+}
+
+main {
+  display: flex;
+  /*height: 100%;*/
+}
+
+nav {
+  flex: 1;
+}
+
+article {
+  flex: 5;
+  /*background: #ffd54f;*/
+}
+
+/*aside {*/
+/*  flex: 1;*/
+/*  background: #FFF176;*/
+/*}*/
+
+header,
+footer,
+article,
+nav,
+aside {
+  padding: 1em;
+}
+
+/****/
+
+#title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sliderYear {
+    /*border: #BA3F1D;*/
+    margin: 2rem 0;
+}
+
+.rc-slider-track {
+    background: #BA3F1D;
+}
+
+.rc-slider-dot-active {
+    border-color: #BA3F1D;
+}
+
+.rc-slider-handle {
+    border-color: #BA3F1D;
+}
+
+.settings {
+    /*border: 1px solid #BA3F1D;*/
+}
+
+/* YEARS */
+#yearContainer {
+    flex: 1 100%;
+    justify-content: space-around;
+    display: inline-flex;
+    background-color:  #BA3F1D;
+    margin-bottom:  1em;
+    font-size: 0.7em;
+}
+
+.yearButtons input[type="radio"]:checked ~ .yearButtons label {
+    color: blue !important;
+}
+
+.yearButtons input[type="radio"]{
+    opacity:  0;    
+    cursor: pointer;
+}
+
+.yearButtons input[type="radio"]:checked ~ * {
+    color: blue !important;
+    font-weight: bold !important;
+}
+
+.yearButtons label{
+    color: #BA3F1D;
+    text-align: center;
+    font-Size: 1.5em;
+    cursor: pointer;
+}
+
+
+.yearButtons label:hover {
+    color: #BA3F1D;
+    font-weight:  bold;
+}
+
+.maps {
+    display: flex;
+}
+
+.map {
+    flex: 1;
+    margin:  0.3em;
+}
+
+#lineCharts {
+    display: flex;
+}
+
+.lineChart {
+    flex: 1;
+    margin:  0.3em;
+    /*min-width: 0;*/
+
+}
+
+#lineChartContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#colorscale {
+
+}
+
+#radio_button_map {
+    width: 10em;
+}
+
+#abs-rel-picker {
+    width: 10em;
+}
+
+#abs-rel-naics {
+    width: 10em;
+}
+
+#dateSlider {
+    padding: 1rem 5rem;
+    width: 20rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+#state-dropdown {
+    /*min-width: 3em;*/
+}
+
+#navbar {
+    font-weight: bold;
+    text-transform: uppercase;
+}
